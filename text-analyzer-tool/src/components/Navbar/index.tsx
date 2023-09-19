@@ -1,6 +1,7 @@
 import { ReactComponent as Linkedin } from '../../assets/icons/linkedin.svg'
-import { ReactComponent as Twitter } from '../../assets/icons/twitter.svg'
-import { ReactComponent as Website } from '../../assets/icons/website.svg'
+import { ReactComponent as Instagram } from '../../assets/icons/instagram.svg'
+import { ReactComponent as Github } from '../../assets/icons/github.svg'
+
 import './index.scss'
 
 const Navbar = () => {
@@ -11,18 +12,18 @@ const Navbar = () => {
           <span className="app-title">Text Analyser</span>
           <ul className="social-links">
             <li>
-              <a href="https://codewithbasit.netlify.app/" target="_blank" rel="noreferrer">
-                <Website />
+              <a href="https://github.com/RachCiar/" target="_blank" rel="noreferrer">
+                <Github />
               </a>
             </li>
             <li>
-              <a href="https://twitter.com/Basit_Miyanji" target="_blank" rel="noreferrer">
-                <Twitter />
+              <a href="https://www.instagram.com/rae_ciarlante/" target="_blank" rel="noreferrer">
+                <Instagram />
               </a>
             </li>
             <li>
               <a
-                href="https://www.linkedin.com/in/abdulbasitprofile/"
+                href="https://www.linkedin.com/in/rachelciarlante/"
                 target="_blank"
                 rel="noreferrer"
               >

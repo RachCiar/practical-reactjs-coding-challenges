@@ -1,26 +1,36 @@
+import React from 'react'
 import './index.scss'
+import WordCounter from '../Counters/WordCounter'
+import CharacterCounter from '../Counters/CharacterCounter'
+import SentenceCounter from '../Counters/SentenceCounter'
+import ParagraphCounter from '../Counters/ParagraphCounter'
+import PronounCounter from '../Counters/PronounCounter'
 
-const ResultBox = () => {
+type ResultBoxProps = {
+  text: string
+}
+
+const ResultBox: React.FC<ResultBoxProps> = ({ text }) => {
   const resultBar = [
     {
       title: 'Words',
-      value: 0,
+      value: <WordCounter text={text} />,
     },
     {
       title: 'Characters',
-      value: 0,
+      value: <CharacterCounter text={text} />,
     },
     {
       title: 'Sentences',
-      value: 0,
+      value: <SentenceCounter text={text} />,
     },
     {
       title: 'Paragraphs ',
-      value: 0,
+      value: <ParagraphCounter text={text} />,
     },
     {
       title: 'Pronouns',
-      value: 0,
+      value: <PronounCounter text={text} />,
     },
   ]
 

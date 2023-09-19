@@ -1,14 +1,21 @@
+import React from 'react'
 import './index.scss'
+import AverageReadingTimeCounter from '../Counters/AverageReadingTimeCounter'
+import LongestWordCounter from '../Counters/LongestWordCounter'
 
-const BottomResultBox = () => {
+type BottomResultBoxProps = {
+  text: string
+}
+
+const BottomResultBox: React.FC<BottomResultBoxProps> = ({ text }) => {
   const bottomResultBar = [
     {
       title: 'Average Reading Time:',
-      value: '-',
+      value: <AverageReadingTimeCounter text={text} />,
     },
     {
       title: 'Longest word:',
-      value: '-',
+      value: <LongestWordCounter text={text} />,
     },
   ]
 

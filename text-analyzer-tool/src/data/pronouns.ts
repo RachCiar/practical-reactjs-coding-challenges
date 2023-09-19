@@ -21,6 +21,7 @@ export const pronouns = [
   'yours',
   'hers',
   'his',
+  'their',
   'theirs',
   'myself',
   'yourself',
